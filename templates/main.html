@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Louis Reilly-Willhight</title>
+</head>
+<body>
+
+  {% include "header.html" ignore missing %}
+
+  <hr>
+
+  <div class="main-container">
+    <h1 class="main-intro">Welcome</h1>
+    <div class="main-portrait">
+      <img src="{{ url_for('static', filename='img/portrait_placeholder.jpg') }}" alt="louis portrait">
+    </div>
+
+    <hr>
+
+    <div class="main-about">
+      <h1>About me:</h1>
+      <p>I'm a former cook and jack of all trades who is deeply fascinated by the inner workings of code language. I enjoy finding novel, elegant solutions to logic problems and take pride in a quality end product: I've studied full-stack web development, but am certainly more interested in the inner-workings of code design.</p>
+    </div>
+
+    <hr>
+
+    <div class="main-stacks">
+      <h1>Some of the tech stacks I've worked with:</h1>
+      <ul class="stacks">
+        <li>HTML/CSS/JS</li>
+        <li>Node/Express</li>
+        <li>SQL</li>
+        <li>MongoDB/Mongoose</li>
+        <li>React/React-Native</li>
+        <li>Flask</li>
+        <li>GraphQL</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="contact-container">
+      <h2>Contact:</h2>
+      <p>If you're interested in chatting about a project, or if you have any questions, please don't hesitate to send me an email.</p>
+      <button class="emailButton">
+        <a class="emailLink" href="mailto:lreillywillhight@gmail.com">Email</a>
+      </button>
+    </div>
+  </div>
+
+  {% include "footer.html" ignore missing %}
+  
+</body>
+</html>

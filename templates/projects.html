@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Projects</title>
+</head>
+<body>
+
+  {% include "header.html" %}
+
+  <div class="projects-container">
+    <h1>Some of my projects:</h1>
+    <hr>
+    <h4>Goomball</h4>
+    <div class="projects-image-container">
+      <img class="projects-image" src="{{ url_for('static', filename='img/goomball_demo.png') }}" alt="goomball demo image">
+      <div class="projects-overlay">
+        <div class="projects-overlay-text">
+          A small adventure game sandbox. Collect keys to open doors and escape the maze. Kick your goomber buddy and put him in jail if you want (mean!)
+          <br> <br>
+          Made using Phaser JavaScript library.
+          <br> <br>
+          <a href="https://lreillywillhight.github.io/project1/"><button>Try it out</button></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h4>SpaceX Tracker</h4>
+    <div class="projects-image-container">
+      <img class="projects-image" src="{{ url_for('static', filename='img/spacex_tracker_demo.png') }}" alt="space x tracker demo image">
+      <div class="projects-overlay">
+        <div class="projects-overlay-text">
+          Shows recent headlines from the SpaceFlightNews API. Can store favorite images, articles, and more.
+          <br> <br>
+          Made using HTML/JS, Node/Express/Sequelize, and PostgreSQL. Currently in development.
+          <br> <br>
+          <a href="https://project2louisreillywillhight.herokuapp.com/"><button>Have a look</button></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h4>Insplore</h4>
+    <div class="projects-image-container">
+      <img class="projects-image" src="{{ url_for('static', filename='img/insplore_demo.png') }}" alt="insplore demo image">
+      <div class="projects-overlay">
+        <div class="projects-overlay-text">
+          A concept created for the General Assembly team hackathon during my cohort. Experience foreign culture without leaving the safety of your home. (First place of 9 teams!)
+          <br> <br>
+          Made using Mapbox' API, Bootstrap, and NextJS. We were a 6-person team with 24 hours from theme to finish: I spent almost all of my time working on integrating the API into the browser. 
+          <br> <br> 
+          Currently in development.
+        </div>
+      </div>
+    </div>
+    <hr>
+    <h4>Projects Showcase</h4>
+    <div class="projects-image-container">
+      <img class="projects-image" src="{{ url_for('static', filename='img/project_showcase_demo.png') }}" alt="project showcase demo image">
+      <div class="projects-overlay">
+        <div class="projects-overlay-text">
+          A lightweight app to store, organize, and display your personal projects.
+          <br> <br>
+          Uses Flask front-end and GraphQL endpoint, as well as mongoDB.
+          <br> <br>
+          Currently in development.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include "footer.html" %}
+  
+</body>
+</html>
